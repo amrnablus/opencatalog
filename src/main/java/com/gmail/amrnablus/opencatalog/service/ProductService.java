@@ -44,7 +44,7 @@ public class ProductService {
     	mongoOperations.remove(product);
     }
      
-    public void updatePerson( Product product ) {
+    public void updateProduct( Product product ) {
     	mongoOperations.insert(product);      
     }
 
