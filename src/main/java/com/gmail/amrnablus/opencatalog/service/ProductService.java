@@ -32,20 +32,19 @@ public class ProductService {
 	public void addProduct( Product product ) {
 		if (!mongoOperations.collectionExists(Product.class)) {
 			mongoOperations.createCollection(Product.class);
-        }
+		}
 		mongoOperations.insert(product);
 	}
-	
-	public List<Product> listProducts() {
-        return mongoOperations.findAll(Product.class);
-    }
-     
-    public void deletePerson( Product product ) {
-    	mongoOperations.remove(product);
-    }
-     
-    public void updateProduct( Product product ) {
-    	mongoOperations.insert(product);      
-    }
 
+	public List<Product> listProducts() {
+		return mongoOperations.findAll(Product.class);
+	}
+
+	public void deleteProduct( Product product ) {
+		mongoOperations.remove(product);
+	}
+
+	public void updateProduct( Product product ) {
+		mongoOperations.insert(product);      
+	}
 }
