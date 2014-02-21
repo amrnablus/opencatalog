@@ -22,28 +22,24 @@ public class ProductController {
 	private ProductService productService;
 
 	@RequestMapping(value = {"/product/list","/product","/"}, method = RequestMethod.GET)
-	@ResponseBody
-	public List<Product> getProductsList(ModelMap model) {
+	public @ResponseBody List<Product> getProductsList(ModelMap model) {
 		return productService.listProducts();
 	}
 
 	@RequestMapping(value = "/product/save", method = RequestMethod.POST)
-	@ResponseBody
-	public Product createProduct(@ModelAttribute Product product, ModelMap model) {
+	public @ResponseBody Product createProduct(@ModelAttribute Product product, ModelMap model) {
 		this.productService.addProduct(product);
 		return product;
 	}
 
-	@RequestMapping(value = "/product/delete", method = RequestMethod.GET)  
-	@ResponseBody
-	public boolean deleteProduct(@ModelAttribute Product product, ModelMap model) {  
+	@RequestMapping(value = "/product/delete", method = RequestMethod.GET)
+	public @ResponseBody boolean deleteProduct(@ModelAttribute Product product, ModelMap model) {
 		productService.deleteProduct(product);
 		return true;
 	}
 
 	@RequestMapping(value = "/product/update", method = RequestMethod.POST)
-	@ResponseBody
-	public boolean updateProduct(@ModelAttribute Product product, ModelMap model) {
+	public @ResponseBody boolean updateProduct(@ModelAttribute Product product, ModelMap model) {
 		productService.updateProduct(product);
 		return true;
 	}
