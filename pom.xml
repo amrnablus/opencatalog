@@ -12,15 +12,10 @@
 		<spring.version>3.1.1.RELEASE</spring.version>
 		<spring-data-mongodb.version>1.0.2.RELEASE</spring-data-mongodb.version>
 		<querydsl.version>2.7.0</querydsl.version>
+		<jackson.version>1.9.13</jackson.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -123,11 +118,33 @@
 			<version>${spring.version}</version>
 		</dependency>
 
+		<!-- <dependency> -->
+		<!-- <groupId>com.fasterxml.jackson.core</groupId> -->
+		<!-- <artifactId>jackson-databind</artifactId> -->
+		<!-- <version>${jackson.version}</version> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>com.fasterxml.jackson.core</groupId> -->
+		<!-- <artifactId>jackson-databind</artifactId> -->
+		<!-- <version>${jackson.version}</version> -->
+		<!-- </dependency> -->
+
+		<!-- Jackson JSON Mapper -->
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.9.12</version>
+			<version>1.9.13</version>
 		</dependency>
+
+
+		<!-- RSS -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>net.java.dev.rome</groupId> -->
+<!-- 			<artifactId>rome</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+<!-- 		</dependency> -->
+
 	</dependencies>
 
 	<build>
