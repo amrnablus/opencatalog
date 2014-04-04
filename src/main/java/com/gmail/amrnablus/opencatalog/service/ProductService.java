@@ -1,15 +1,8 @@
 package com.gmail.amrnablus.opencatalog.service;
 
-
-//import static org.springframework.data.mongodb.core.query.Criteria.where;
-//import static org.springframework.data.mongodb.core.query.Query.query;
-//import static org.springframework.data.mongodb.core.query.Update.update;
-
 import java.util.List;
-
 import com.gmail.amrnablus.opencatalog.model.Product;
 import com.gmail.amrnablus.opencatalog.model.ProductAttribute;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -7,10 +7,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.View;
-import org.springframework.web.servlet.view.RedirectView;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.gmail.amrnablus.opencatalog.model.Product;
 import com.gmail.amrnablus.opencatalog.service.ProductService;
 
