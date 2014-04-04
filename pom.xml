@@ -118,18 +118,6 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-		<!-- <dependency> -->
-		<!-- <groupId>com.fasterxml.jackson.core</groupId> -->
-		<!-- <artifactId>jackson-databind</artifactId> -->
-		<!-- <version>${jackson.version}</version> -->
-		<!-- </dependency> -->
-
-		<!-- <dependency> -->
-		<!-- <groupId>com.fasterxml.jackson.core</groupId> -->
-		<!-- <artifactId>jackson-databind</artifactId> -->
-		<!-- <version>${jackson.version}</version> -->
-		<!-- </dependency> -->
-
 		<!-- Jackson JSON Mapper -->
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
@@ -137,14 +125,12 @@
 			<version>1.9.13</version>
 		</dependency>
 
-
-		<!-- RSS -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>net.java.dev.rome</groupId> -->
-<!-- 			<artifactId>rome</artifactId> -->
-<!-- 			<version>1.0.0</version> -->
-<!-- 		</dependency> -->
-
+		<!-- json-schema -->
+		<dependency>
+			<groupId>com.github.fge</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>2.1.8</version>
+		</dependency>
 	</dependencies>
 
 	<build>
